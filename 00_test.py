@@ -1,6 +1,8 @@
-user_sayi = int(input("Bir sayi giriniz : "))
+a = 0
+while a < 3:
+    print(a, end=", ")
+    a += 1
+else:
+    print("Loop ici Ende")
 
-if user_sayi> 0 :
-    print("Pozitif")
-else    :
-    print("Negatif ya da sifir")
+
