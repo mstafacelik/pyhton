@@ -2,7 +2,7 @@
 # while...else temel örnek
 a = 0
 while a < 3:
-    print(a, end=", ")
+    print(a, end=" ")
     a += 1
 else:
     print("\nLoop ici Ende")
@@ -16,7 +16,7 @@ while b < 5:
     if b == 3:
         print("\nRulet break ile patladi, Loop burada sona erdi")
         break
-    print(b, end=", ")
+    print(b, end=" ")
     b += 1
 else:
     print("Loop ici Ende")
@@ -33,9 +33,10 @@ while c < 5:
         print()
         print("Yasakli sayi atlandi")
         continue
-    print(c, end=", ")
+    print(c, end=" ")
     c += 1
 else:
+    print()
     print("Loop ici Ende")
 
 print("Loop sonrasi devam...")
