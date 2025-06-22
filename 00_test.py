@@ -1,35 +1,20 @@
 
-'''
--Kullaniciya en fazla 4 giriş hakki ver.
--Şifre "python2024" ise → 'Giriş başarili'
--Hataliysa tekrar denesin.
--4 kez yanlişsa → 'Hesap bloke oldu' yaz.
+import random
 
-'''
+dogru_sayi = random.randint(1, 20)
 
+for hak in range(3):
+    tahmin = int(input("Random sayiyi tahmin et: "))
 
-sifre=""
-sayac=0
+    if tahmin == dogru_sayi:
+        print("Doğru tahmin!")
+        break
+    elif tahmin < dogru_sayi:
+        if hak < 2:
+            print("El büyüt")
+    else:
+        if hak < 2:
+            print("El kücült")
 
-while sifre !="kartal1903" :
-
-      user_input_sifre=input("Lütfen sifrenizi girin : ")
-      sayac+=1
-      
-      if user_input_sifre=="kartal1903" :
-          print("Giris basarili")
-          break 
-      
-      if sayac==4 :
-          print("Hesap bloke oldu")
-          break
-
-        
-
-
-        
-    
-      
-
-      
- 
+else:
+    print(f"Game over, hakkin doldu. Dogru sayi: {dogru_sayi}")

@@ -1,5 +1,5 @@
 
-### break
+# break
 # Bir while veya for döngüsünü hemen sonlandırır. Kosul saglansa bile, break varsa döngü biter.
 
 
@@ -9,6 +9,7 @@ while True:
     if yas < 0:
         print("Negatif yas olmaz!")
         break
+        print("test")
     elif yas < 18:
         print("Resit degilsiniz")
 
@@ -26,15 +27,16 @@ print("Ende")
 # Ende
 
 
-
-
-### continue
+# continue
 # Döngüde kalan satırları atlayıp başa döner.
 
-i=0
+i = 0
 
 while i < 6:
-    i+=1
-    if i==4:
+    i += 1
+    if i == 4:
         continue
     print(i)
+
+
+# i == 4 olduğunda print(i) atlanır.
